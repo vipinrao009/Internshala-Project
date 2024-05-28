@@ -1,0 +1,35 @@
+.partner-carousel{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    gap: 20px;
+    padding: 60px;
+    
+}
+
+.carousel-divider{
+    padding-top: 3px;
+    background: black;
+    border: 12px solid #cfd0d2;
+}
+.carousel-control {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+.carousel-images{
+    background-color: #171A24;
+    height: 100px;
+    padding: 28px;
+}
+
+.carousel-images img{
+   height: 100px;
+   margin-left: 20px;
+   margin-right: 20px;
+}
