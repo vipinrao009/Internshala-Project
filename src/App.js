@@ -3,6 +3,7 @@ import './App.css';
 import Certification from './Components/Certification/Certification'; // Correctly import the logo
 import Header from './Layout/Header/Header';
 import PartnerCarousel from './Components/Carousel/PartnerCarousel';
+import Prerequisites from './Components/Prerequisites/Prerequisites';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header/>
       <Certification />
       <PartnerCarousel/>
+      <Prerequisites/>
     </div>
   );
 }
