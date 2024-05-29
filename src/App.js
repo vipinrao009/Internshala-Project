@@ -6,6 +6,7 @@ import PartnerCarousel from './Components/Carousel/PartnerCarousel';
 import Prerequisites from './Components/Prerequisites/Prerequisites';
 import ExamDetails from './Components/ExamDetails/ExamDetails';
 import CertificationModules from './Components/CertificationModules/CertificationModules';
+import LearningPage from './Components/LearningPage/LearningPage';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Prerequisites/>
       <ExamDetails/>
       <CertificationModules/>
+      <LearningPage/>
     </div>
   );
 }

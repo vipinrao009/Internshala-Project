@@ -1,0 +1,91 @@
+.learning-page {
+    background-color: #0d1117;
+    color: white;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .learning-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .topics-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .topic {
+    display: flex;
+    align-items: flex-start;
+    /* background-color: #161b22; */
+    /* padding: 1.5rem; */
+    /* margin: 1rem; */
+    border-radius: 8px;
+    width: 40%;
+    /* width: calc(45% - 2rem); Adjusted width for layout */
+    /* box-sizing: border-box; */
+    transition: transform 0.2s;
+  }
+  
+  /* .topic:hover {
+    transform: scale(1.05);
+  } */
+  
+  .topic .icon {
+    font-size: 4rem;
+    color: #f0db4f; /* Adjust the color of the icon */
+    margin-right: 1rem;
+  }
+  
+  .topic .content {
+    text-align: left;
+    padding-left: 8px;
+    margin-top: -12px;
+    padding-right: 1rem;
+    margin-bottom: 13px;
+  }
+  
+  .topic .content h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .topic .content p {
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .topic {
+      width: calc(90% - 2rem); /* Full width for tablets */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .topic {
+      width: calc(100% - 2rem); /* Full width for mobile */
+    }
+  
+    .topic {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .topic .icon {
+      margin-bottom: 1rem;
+    }
+  
+    .topic .content h2 {
+      font-size: 1.25rem;
+    }
+  
+    .topic .content p {
+      font-size: 0.875rem;
+    }
+  }
+  
