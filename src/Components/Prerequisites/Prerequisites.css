@@ -25,6 +25,7 @@
   .content {
     text-align: left;
     margin-top: 60px;
+    padding-bottom: 60px;
     padding-left: 10rem;
     padding-right: 10rem;
   }

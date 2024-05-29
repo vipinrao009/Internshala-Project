@@ -4,6 +4,7 @@ import Certification from './Components/Certification/Certification'; // Correct
 import Header from './Layout/Header/Header';
 import PartnerCarousel from './Components/Carousel/PartnerCarousel';
 import Prerequisites from './Components/Prerequisites/Prerequisites';
+import ExamDetails from './Components/ExamDetails/ExamDetails';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Certification />
       <PartnerCarousel/>
       <Prerequisites/>
+      <ExamDetails/>
     </div>
   );
 }
