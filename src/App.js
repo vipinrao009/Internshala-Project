@@ -7,6 +7,7 @@ import Prerequisites from './Components/Prerequisites/Prerequisites';
 import ExamDetails from './Components/ExamDetails/ExamDetails';
 import CertificationModules from './Components/CertificationModules/CertificationModules';
 import LearningPage from './Components/LearningPage/LearningPage';
+import IndustryOpportunitiesSlider from './Components/Slider/IndustryOpportunitiesSlider';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <ExamDetails/>
       <CertificationModules/>
       <LearningPage/>
+      <IndustryOpportunitiesSlider/>
     </div>
   );
 }

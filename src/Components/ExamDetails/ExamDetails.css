@@ -45,12 +45,10 @@
     max-width: 600px;
   }
 
-  .details-grid  :hover{
-    background-color: #d4af37;
-    transition:all;
-    transition-duration: 0.5s;
-
-  }
+  .details-grid  :hover {
+    background-color: #CFA935; 
+    transition: background-color 1s ease-in-out;
+}
   
   .detail-box {
     background-color: #21262d; /* Dark grey box color */
