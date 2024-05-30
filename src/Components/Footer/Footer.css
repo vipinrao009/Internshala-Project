@@ -116,6 +116,13 @@
     .footer-bottom img{
       display: none;
     }
+
+    .footer {
+      background-color: #000;
+      color: #fff;
+      padding-left: 0px;
+      font-family: Arial, sans-serif;
+    }
     
     .footer-section{
       padding-top: 1rem;
