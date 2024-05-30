@@ -8,6 +8,7 @@ import ExamDetails from './Components/ExamDetails/ExamDetails';
 import CertificationModules from './Components/CertificationModules/CertificationModules';
 import LearningPage from './Components/LearningPage/LearningPage';
 import IndustryOpportunitiesSlider from './Components/Slider/IndustryOpportunitiesSlider';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <CertificationModules/>
       <LearningPage/>
       <IndustryOpportunitiesSlider/>
+      <Footer/>
     </div>
   );
 }

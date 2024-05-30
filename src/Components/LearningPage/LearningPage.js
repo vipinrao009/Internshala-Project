@@ -29,7 +29,9 @@ const LearningPage = () => {
       <div className="topics-container">
         {topics.map((topic, index) => (
           <div className="topic" key={index}>
-            <FaCheckCircle className="icon" />
+            <div className="icon-container">
+              <FaCheckCircle className="icon" />
+            </div>
             <div className="content">
               <h4>{topic.title}</h4>
               <p>{topic.description}</p>

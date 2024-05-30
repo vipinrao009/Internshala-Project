@@ -1,35 +1,89 @@
-.partner-carousel{
+
+.slider-container1 {
+    border-top: 3px solid #f50000;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top:50px ;
+    padding-bottom:50px ;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.slider-container h1 {
+    margin-top: -2rem;
+    margin-bottom: 4rem;
+    letter-spacing: 3px;
+}
+
+.slide1 {
+    
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #000;
-    gap: 20px;
-    padding: 60px;
-    
 }
 
-.carousel-divider{
-    padding-top: 3px;
-    background: black;
-    border: 12px solid #cfd0d2;
+.card1 {
+    background-color: #1c1c1e;
+    padding: 20px;
+    margin: auto;
+    height: 110px;
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+    align-items: center;
 }
-.carousel-control {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-  }
 
-.carousel-images{
-    background-color: #171A24;
+.card1 img{
     height: 100px;
-    padding: 28px;
 }
 
-.carousel-images img{
-   height: 100px;
-   margin-left: 20px;
-   margin-right: 20px;
+.card1:hover {
+    background-color: #CFA935; 
+    transition: background-color 1s ease-in-out;
+}
+
+
+
+
+.card1 h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card1 p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Responsive Styles */
+
+/* For screens up to 1024px */
+@media (max-width: 1024px) {
+    /* Adjust maximum width for the cards */
+    .card1 {
+        max-width: 400px;
+    }
+}
+
+/* For screens up to 768px (tablet) */
+@media (max-width: 768px) {
+    /* Adjust padding for the slider container */
+    .slider-container1 {
+        padding: 100px;
+    }
+
+    /* Adjust maximum width for the cards */
+    .card1 {
+        max-width: 90%;
+    }
+}
+
+/* For screens up to 480px (mobile) */
+@media (max-width: 480px) {
+    /* Adjust padding for the slider container */
+    .slider-container1 {
+        padding: 50px;
+    }
 }
