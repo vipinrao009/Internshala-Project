@@ -1,59 +1,95 @@
 .certification {
-    background-color: #000;
-    color: white;
-    padding: 40px 20px;
-    text-align: left;
-    background: url('../../Assets/BG\ IMage.png') no-repeat center center fixed; /* Ensure the path is correct */
-    background-size: cover; /* Or use 'contain' depending on your needs */
-    display: grid; /* Add display: grid */
-    grid-template-columns: repeat(2, minmax(0, 1fr)); /* Define the columns */
- 
-  }
+  background-color: #000;
+  color: white;
+  padding: 40px 20px;
+  text-align: left;
+  background-image: url('../../Assets/BG\ IMage.png') ;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px; 
+}
 
-  .containor{
-    height: 530px;
-    width: 600px;
-    margin-top: 10px;
-    margin: 15px;
-    padding-left: 5px;
-  }
+.containor {
+  height: auto; 
+  width: 100%; 
+  margin-top: -45px;
+  /* margin: 5px; */
+  padding-left: 35px;
+}
 
-  .logo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .logo-container img{
-    height: 300px;
-    width: 300px;
-  }
+.logo-container img {
+  max-width: 70%; 
+  height: 300px; 
+}
+
+.cert-title {
+  font-size: 2.5rem; 
   
-  .cert-title {
-    font-size: 48px;
+}
+
+.cert-title span{
+  font-size: 2.5rem; 
+  color: #ffd700;
+}
+
+.cert-number {
+  font-size: 1rem; 
+  margin: 10px 0;
+}
+
+.cert-description {
+  font-size: 1rem; 
+  margin: 20px 0;
+  line-height: 1.6;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 10px;
+}
+
+.btn {
+  background-color: #ffd600;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;  
+  cursor: pointer;
+}
+
+  .btn:hover {
+    background-color: #CFA935; 
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+.btn1{
+  background-color: transparent;
+  color: #ffd700;
+  border-color: #ffd700;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn1:hover{
+  background-color: #CFA935; 
+  transition: background-color 0.3s ease-in-out;
+  color: white;
+}
+@media (max-width: 480px) {
+  .logo-container img {
+    order: 1;
+  } 
+  .containor {
+    padding-left: 1px;
   }
-  
-  .cert-number {
-    font-size: 18px;
-    margin: 10px 0;
-  }
-  
-  .cert-description {
-    font-size: 16px;
-    margin: 20px 0;
-    line-height: 1.6;
-  }
-  
-  .buttons {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .btn {
-    background-color: #ffd700;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
+}

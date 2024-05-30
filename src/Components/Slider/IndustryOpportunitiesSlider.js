@@ -5,6 +5,8 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './IndustryOpportunitiesSlider.css'; // Custom CSS for styling
 import logo from "../../Assets/Course logo.png"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Import FontAwesomeIcon
+import { faSchool } from '@fortawesome/free-solid-svg-icons'; // Import the necessary icon
 
 const IndustryOpportunitiesSlider = () => {
   const settings = {
@@ -47,21 +49,21 @@ const IndustryOpportunitiesSlider = () => {
       <Slider {...settings}>
         <div className="slide">
           <div className="card">
-            <img className='logo' src={logo} alt="" />
+          <FontAwesomeIcon className='logo' icon={faSchool} />
             <h3>Cybersecurity Analyst</h3>
             <p>Analyzes cyber threats using AI tools, monitors security systems, and recommends solutions to enhance network safety.</p>
           </div>
         </div>
         <div className="slide">
           <div className="card">
-            <img className='logo' src={logo} alt="" />
+            <FontAwesomeIcon className='logo' icon={faSchool} />
             <h3>Penetration Tester</h3>
             <p>Uses AI to identify and exploit vulnerabilities in systems, ensuring robustness against potential cyberattacks.</p>
           </div>
         </div>
         <div className="slide">
           <div className="card">
-            <img className='logo' src={logo} alt="" />
+          <FontAwesomeIcon className='logo' icon={faSchool} />
             <h3>Security Researcher</h3>
             <p>Investigates AI-driven security solutions, explores emerging threats, and develops cybersecurity defense mechanisms.</p>
           </div>

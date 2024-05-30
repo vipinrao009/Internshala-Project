@@ -23,7 +23,7 @@
   
   .module-header {
     display: flex;
-    justify-content: flex-start; /* Align items to the left */
+    justify-content: flex-start;
     align-items: center;
     padding: 1rem;
     cursor: pointer;
@@ -42,13 +42,14 @@
   .module-content {
     padding: 1rem;
     background-color: #000;
-    text-align: left; /* Ensure text is aligned to the left */
+    text-align: left; 
+    color: #A9A7B0;
   }
   
   .module-content ul {
     list-style: none;
     padding: 0;
-    margin: 0; /* Remove margin to align items perfectly */
+    margin: 0;
   }
   
   .module-content ul li {

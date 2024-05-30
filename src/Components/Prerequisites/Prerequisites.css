@@ -1,46 +1,88 @@
+/* Default styles */
 .prerequisites {
   background-color: #000;
-    color: white;
-    padding-top: 1px;
-  }
-  .horizontal {
-    border: none;
-    border-top: 1px solid #2A2E36;
-  }
-  .tabs {
-    list-style:none;
-    display: flex;
-    font-size: medium;
-    gap: 20px;
-    padding: 9px;
-    margin: 0;
-    padding-left: 10rem;
-    padding-right: 10rem;
+  color: white;
+  padding-top: 1px;
+}
 
+.horizontal {
+  border: none;
+  border-top: 1px solid #2A2E36;
+}
+
+.tabs {
+  list-style: none;
+  display: flex;
+  font-size: medium;
+  gap: 20px;
+  padding: 9px;
+  margin: 0;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.tabs li {
+  cursor: pointer;
+}
+
+.content {
+  text-align: left;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.prereq-list {
+  list-style: disc;
+  padding-left: 1rem;
+  color: #A9A7B0;
+}
+
+.prereq-list li::marker {
+  color: #CFA935;
+}
+
+.prereq-list li {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 767px) {
+  .tabs {
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
-  .tabs li {
-    cursor: pointer;
+
+  .content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .tabs {
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
   
   .content {
-    text-align: left;
-    margin-top: 60px;
-    padding-bottom: 60px;
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
-  
-  .prereq-list {
-    list-style:disc;
-    padding-left: 1rem;
+}
+
+@media screen and (min-width: 1025px) {
+  .tabs {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
-  .prereq-list li::marker {
-    color: #CFA935; /* Replace #2A2E36 with your desired color */
+  .content {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
-  
-  .prereq-list li {
-    margin: 10px 0;
-    line-height: 1.6;
-  }
-  
+}

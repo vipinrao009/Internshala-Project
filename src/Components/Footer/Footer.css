@@ -17,6 +17,7 @@
     padding-top: 3rem;
     flex: 1;
     margin: 10px;
+    text-align: left;
   }
   
   .footer-logo {
@@ -31,6 +32,11 @@
     border: none;
     border-bottom: 1px solid black;
     border-radius: 0%;
+    background: transparent;
+    padding: 0.5rem;
+    margin-right: 7rem;
+    padding-right: 11rem;
+    border-bottom: 1px solid wheat;
   }
 
 
@@ -38,10 +44,19 @@
   .newsletter-section button {
     padding: 10px 20px;
     border: none;
-    background-color: #CFA935;
-    color: #000;
+    background-color: transparent;
+    color: wheat;
+    margin-left: -151px;
     border-radius: 5px;
     cursor: pointer;
+  }
+
+  .newsletter-form{
+    display: flex;
+    align-items: center;
+  }
+  .newsletter-form .icn{
+    margin-left: 1px;
   }
   
   .social-icons {
@@ -98,6 +113,21 @@
   }
 
   @media (max-width: 480px) {
+    .footer-bottom img{
+      display: none;
+    }
+    
+    .footer-section{
+      padding-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 880px) {
     .footer-bottom img{
       display: none;
     }

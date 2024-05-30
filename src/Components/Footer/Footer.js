@@ -3,8 +3,8 @@ import './Footer.css';
 import logo from "../../Assets/Logo.png"
 import footer from "../../Assets/Object.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faYoutube, faInstagram, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons';
-
+import { faFacebookF, faYoutube, faInstagram, faLinkedinIn, faTwitter} from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 const Footer = () => {
   return (
     <footer className="footer">
@@ -15,7 +15,8 @@ const Footer = () => {
           <div className="footer-section newsletter-section">
           <h3>Newsletter Signup</h3>
           <div className="newsletter-form">
-            <input type="email" placeholder="Enter Your Email Address" />
+            <FontAwesomeIcon className='icn' icon={faEnvelope} /> 
+            <input  type="email" placeholder="Enter Your Email Address" />
             <button type="submit">→</button>
           </div>
           <div className="social-icons">
